@@ -1,0 +1,37 @@
+a {
+    text-decoration: none;
+}
+
+
+.section__padding {padding: 2rem 6rem;}
+.section__margin {margin: 2rem 6rem;}
+
+.custom-button {
+    font-family: var(--font-alt);
+    background: linear-gradient( 157.81deg, #def9fa -43.27%, #bef3f5 -21.24%, #9dedf0 12.19%, #7de7eb 29.82%, #5ce1e6 51.94%, #33bbcf 90.29% );
+    color: var(--color-blog);
+    font-family: var(--font-alt);
+    font-weight: 500;
+    border: 2px solid var(--color-gray);
+    border-radius: 10px;
+    width: 150px;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    margin: 1rem 0;
+}
+.custom-button:active {
+    transform: translateY(0.1rem);
+}
+
+
+
+
+@media screen and (max-width:1050px) {
+    .section__padding{padding:1rem 3rem}
+    .section__margin{margin:1rem 3rem}
+}
+
+@media screen and (max-width:500px) {
+    .section__padding{padding: 1rem;}
+    .section__margin{margin: 1rem;}
+}

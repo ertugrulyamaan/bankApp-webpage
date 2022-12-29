@@ -1,0 +1,60 @@
+.app__carddeal {
+    display: flex;
+    flex-direction: row;
+    background: var(--color-bg);
+}
+
+.app__carddeal-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    margin: 2rem;
+}
+
+.app__carddeal-container h4 {
+    font-family: var(--font-alt);
+    font-size: 52px;
+    color: var(--color-white);
+
+    margin-bottom: 2rem;
+}
+.app__carddeal-container p {
+    font-size: 18px;
+    line-height: 28px;
+    font-family: var(--font-base);
+    color: var(--color-grey);
+}
+
+
+.app__carddeal-img {
+    display: flex;
+}
+
+.app__carddeal-img img {
+    width: 100%;
+}
+
+
+@media screen and (max-width:1050px){
+    .app__carddeal {
+        flex-direction: column;
+    }
+    .app__carddeal-container {
+        margin: 2rem auto;
+    }
+}
+@media screen and (max-width:700px) {
+    .app__carddeal-container h4 {
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .app__carddeal-container h4 {
+        font-size: 35px;
+    }
+    .app__carddeal-container p {
+        font-size: 16px;
+    }
+}

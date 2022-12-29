@@ -1,0 +1,87 @@
+.app__business {
+    display: flex;
+    flex-direction: row;
+    background: var(--color-bg);
+
+    padding: 4rem 6rem;
+
+}
+
+.app__business-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.app__business-container h4 {
+    font-family: var(--font-alt);
+    font-size: 52px;
+    color: var(--color-white);
+
+}
+.app__business-container p {
+    font-family: var(--font-base);
+    font-size: 18px;
+    line-height: 20px;
+    color: var(--color-grey);
+
+    margin: 1rem 0;
+}
+.app__business-features {
+    display: flex;
+    flex-direction: column;
+}
+.app__business-feature {
+    display: flex;
+    flex-direction: row;
+   cursor: pointer;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+.app__business-feature:hover {
+    border: 1px solid var(--color-gray);
+    outline: none;
+    border-radius: 10px;
+    background: var(--color-gray);
+}
+.app__business-feature_container {
+    margin: 1rem;
+}
+.app__business-feature_container h4 {
+    font-family: var(--font-alt);
+    color: var(--color-white);
+}
+.app__business-feature_container p{
+    font-family: var(--font-base);
+    color: var(--color-grey);
+}
+
+
+@media screen and (max-width:1050px) {
+    .app__business {
+        flex-direction: column;
+    }
+
+}
+@media screen and (max-width:700px) {
+    .app__business {
+        padding: 1rem;
+    }
+    .app__business-container h4 {
+        font-size: 45px;
+    }
+
+
+}
+
+@media screen and (max-width:350px) {
+    .app__business-container h4 {
+        font-size: 35px;
+    } 
+    .app__business-container p {
+        font-size: 16px;
+    }
+}
