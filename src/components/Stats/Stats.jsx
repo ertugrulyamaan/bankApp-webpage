@@ -5,7 +5,7 @@ const Stats = () => {
   return (
     <div className='app__stats section_padding'>
       {stats.map(stat =>(
-        <div className='app__stats-container'>
+        <div className='app__stats-container' key={stat.id}>
           <p>{stat.value}</p>
           <h4>{stat.title}</h4>
         </div>
